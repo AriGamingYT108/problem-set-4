@@ -26,7 +26,8 @@ print(df.head())
 
 # Save raw DataFrame into /data
 csv_path = os.path.join(data_dir, "imdb_movies_raw.csv")
-
+json_path = os.path.join(data_dir, "imdb_movies_raw.json")
 df.to_csv(csv_path, index=False)
+df.to_json(json_path, orient='records', lines=True, force_ascii=False)
 
 
