@@ -133,6 +133,6 @@ print(
     "With EUCLIDEAN distance, the top-10 shifts toward more productive actors"
     "who have similar absolute numbers across genres. COSINE ignores magnitude and focuses on "
     "the pattern/proportions of genres, so it keeps actors with similar genre mix even if one "
-    "has many more or fewer films. (If you L2-normalize rows first, Euclidean ≈ Cosine.)"
+    "has many more or fewer films."
 )
 print(f"Saved CSV -> {os.path.abspath(out_path)}")
